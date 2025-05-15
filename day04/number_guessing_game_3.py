@@ -7,7 +7,7 @@ while guess != sec_num:
     guess = input("Enter your guess: a number between 1 to 20 (or 'x' to quit, 's' to show the secret number): ")
 
     if guess == 'x':
-        print("You chose to exit. Goodbye!")
+        print("You chose to exit")
         break
 
     if guess == 's':
