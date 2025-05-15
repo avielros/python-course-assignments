@@ -25,6 +25,12 @@ while guess != sec_num:
 
     print("You chose: " + guess)
 
+     try:
+        guess = int(guess)
+    except ValueError:
+        print("Invalid input. Please enter a number, or x/s/d.")
+        continue
+
     if guess == sec_num:
         print("You are right!")
     elif guess > sec_num:
