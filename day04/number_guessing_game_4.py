@@ -3,6 +3,7 @@ import random
 sec_num = random.randrange(1, 21)
 guess = None
 debug_mode = False 
+
 while guess != sec_num:
     if debug_mode:
         print(f"[DEBUG] Secret number is: {sec_num}")
@@ -25,7 +26,7 @@ while guess != sec_num:
 
     print("You chose: " + guess)
 
-     try:
+    try:
         guess = int(guess)
     except ValueError:
         print("Invalid input. Please enter a number, or x/s/d.")
