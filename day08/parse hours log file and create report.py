@@ -54,3 +54,13 @@ def generate_report(input_file, output_file):
 
     with open(output_file, "w") as f:
         f.write("\n".join(all_lines))
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python timelog_report.py <input_file> <output_file>")
+        sys.exit(1)
+
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+    generate_report(input_path, output_path)
